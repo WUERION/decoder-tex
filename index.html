@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>challenge-alura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="sub-container">
+                <header>
+                    <img src="Alura Challenge - Desafío 1 - Lógica/Logo-1.png" alt="Logo">
+                    <h1>Incriptador de texto</h1>
+                </header>
+                <div class="content-container">
+                    <div class="container-text">
+                        <textarea name="" id="text" cols="30" rows="10" placeholder="Ingresa el texto"
+                            onkeypress="return (event.charCode >= 97 && event.charCode <= 122 || event.charCode == 32)"></textarea>
+                    </div>
+                    <div>
+                        <p class="text-exclamation"><img
+                                src="Alura Challenge - Desafío 1 - Lógica/bi_exclamation-circle-fill.png"
+                                alt="icon exclamation"> Solo
+                            letras minuscula y sin acentos</p>
+                        <div class="container-bnt">
+                            <button type="submit" id="bntIncriptar">Encriptar</button>
+                            <button type="submit" id="bntDesencriptar">Desencriptar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-info">
+                <img src="Alura Challenge - Desafío 1 - Lógica/Muñeco.png" alt="doll" class="muñeco" id="imgInfo">
+                <h3 id="titleInfo">Nigun mensaje fue encontrado</h3>
+                <p class="texto-informativo" id="textInfo">Ingresa el texto que deseas encriptar o desencriptar</p>
+                <button type="submit" id="bntCopiar">Copiar</button>
+            </div>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>

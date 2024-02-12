@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    background-color: #F1F2F4;
+}
+
+main {
+    height: 100dvh;
+    padding: 0 20px;
+}
+
+header {
+    background-color: white;
+    display: flex;
+}
+
+header img {
+    width: 20%;
+}
+
+.container-text {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+textarea {
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+
+.text-exclamation {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.text-exclamation p {
+    color: gray;
+}
+
+.container-bnt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#bntIncriptar {
+    background-color: #0A3871;
+    width: 100%;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 16px;
+}
+
+#bntDesencriptar {
+    border: 1px solid #0A3871;
+    padding: 15px;
+    width: 100%;
+    border-radius: 16px;
+}
+
+.text-info {
+    margin: 20px 0;
+    height: auto;
+    padding: 15px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 24px 32px -8px rgba(0, 0, 0, 0.24);
+    background-color: white;
+}
+
+.container-img-info {
+    width: 100%;
+    height: 50%;
+    border: 1px solid black;
+    display: block;
+}
+
+/* .contInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}*/
+
+.muñeco {
+    width: 50%;
+}
+
+#bntCopiar {
+    border: 1px solid #0A3871;
+    padding: 15px;
+    width: 80%;
+    margin-top: 10px;
+    border-radius: 16px;
+}
+
+#bntIncriptar:hover,
+#bntDesencriptar:hover,
+#bntCopiar:hover {
+    cursor: pointer;
+}
+
+.text-info-none {
+    display: none;
+}
+
+::placeholder {
+    color: #0A3871;
+    font-size: 16px;
+}
+
+/** cunado la pantalla sea mayor a 750px el diseño cambiara a diseño para tablets*/
+@media screen and (min-width:750px) {
+    .container-bnt {
+        flex-direction: row;
+    }
+
+    textarea {
+        margin: 20px 0;
+    }
+}
+
+/** cunado la pantalla sea mayor a 1024px el diseño cambiara a deseño para desktop */
+@media screen and (min-width:1024px) {
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .sub-container {
+        width: 60%;
+        height: 100dvh;
+    }
+
+    header img {
+        width: 10%;
+    }
+
+    .content-container {
+        height: 90dvh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .text-info{
+        width: 500px;
+        border: 1px solid black;
+    }
+
+    .muñeco {
+        width: 100%;
+    }
+}
